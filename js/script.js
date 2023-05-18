@@ -12,6 +12,7 @@ button_get.addEventListener('click', function(){
     console.log(travel_distance)
     let user_age = document.getElementById('age_choice').value;
     console.log(user_age)
+    
     if (isNaN(travel_distance) || (travel_distance==0)){
         alert('I km vanno espressi in numeri o superiori a 0');
     }
@@ -34,10 +35,14 @@ button_get.addEventListener('click', function(){
         console.log(full_price)
         message = `${full_price}`
     }
-
+    // display on screen result from values 
     document.getElementById('ticket_price').innerHTML= message
     document.getElementById('ticket_name').innerHTML = user_name
     document.getElementById('ticket_offer').innerHTML = user_age
+
+    let carriege = Math.floor(Math.random() * 20 + 1)
+    document.getElementById('carriage').innerHTML= carriege
+
+    let cp_code = Math.floor(Math.random() * 100000 + 1)
+    document.getElementById('cp_code').innerHTML= cp_code
 });
-
-

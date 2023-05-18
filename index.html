@@ -13,6 +13,7 @@
         <div class="jumbotron">
             <div class="container">
                 <div class="row text-center">
+                    <!-- user interaction  -->
                     <h1 class="white text-uppercase fw-semibold my-4">calcola il prezzo del tuo biglietto</h1>
                     <div class="col-12 backgroud-white rounded">
                         <form>
@@ -39,15 +40,15 @@
                             <button type="button" class="btn btn-secondary fw-semibold mx-3" id="get_data">Genera</button>
                             <button type="button" class="btn btn-secondary fw-semibold mx-3" id="reset">Annulla</button>
                         </div>
-                        
                     </div>
+                    <!-- user ticket stamp -->
                     <h1 class="white text-uppercase fw-semibold mt-4">il tuo biglietto</h1>
                     <div class="col-12 backgroud-white p-4 mb-5">
                         <h5 class="text-uppercase text-start fw-bold mt-1">detaglio passeggeri</h5>
                         <table class="table table-borderless text-start border-top border-bottom border-secondary">
                             <thead>
                             <tr>
-                                <th class="text-uppercase text-start fw-bold background-grey"> nome passeggero</th>
+                                <th class="text-uppercase text-start fw-bold"> nome passeggero</th>
                                 <th>Offerta</th>
                                 <th>Carrozza</th>
                                 <th>Codice CP</th>
@@ -56,7 +57,7 @@
                             </thead>
                             <tbody>
                             <tr>
-                                <th class="background-grey" id="ticket_name"></th>
+                                <th class="text-capitalize" id="ticket_name"></th>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -64,8 +65,8 @@
                             <tr>
                                 <th class="background-grey"></th>
                                 <td id="ticket_offer"></td>
-                                <td>5</td>
-                                <td>929911</td>
+                                <td id="carriage"></td>
+                                <td id="cp_code"></td>
                                 <td id="ticket_price"></td>
                             </tr>
                             </tbody>
@@ -77,6 +78,5 @@
 
     </main>
     <script type="text/javascript" src="./js/script.js"></script>
-    
 </body>
 </html>
