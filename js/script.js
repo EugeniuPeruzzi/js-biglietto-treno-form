@@ -24,19 +24,19 @@ button_get.addEventListener('click', function(){
 
     else if (user_age == 'Minorenne'){
         let offer = (full_price * 0.8).toFixed(2);
-        console.log(offer)
+        document.getElementById('t_price').innerHTML = `${offer}`;
     }
 
     else if (user_age == 'Over 65'){
         let offer = (full_price * 0.6).toFixed(2);
+        document.getElementById('t_price').innerHTML = `${offer}`;
     }
     else if(user_age == 'Standart'){
         let offer = (full_price).toFixed(2);
+        document.getElementById('t_price').innerHTML = `${offer}`;
     }
 
     // display on screen result from values 
-    document.getElementById('t_price').innerHTML = offer;
-    console.log(offer)
     document.getElementById('ticket_name').innerHTML = user_name;
     document.getElementById('ticket_offer').innerHTML = user_age;
 
